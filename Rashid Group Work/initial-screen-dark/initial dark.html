@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <link href="initial dark stylesheet.css" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+  </head>
+  <body>
+<img class="add-task"src="add-task.png" alt="add task">
+<img class="date"src="date.png" alt="date">
+<img class="done" src="done.png" alt="done">
+<img class="todo"src="todo.png" alt="todo">
+<img class="timetable"src="timetable.png" alt="timetable">
+<img class="quote"src="quote.png" alt="quote">
+<img class="logo"src="logo.png" alt="logo">
+<img class="edit-b"src="edit-b.png" alt="edit button">
+<a href="../initial-page-light/initial-light.html">
+<img class="sun"src="sun.png" alt="sun">
+</a>
+<img class="profile-pic"src="profile-pic.png" alt="profile pic">
+
+
+<button id="btn-cta">GET STARTED NOW!</button>
+
+<div id="container">
+  <div class="background2"></div>
+  <div class="background"></div>
+  <img class="exit1" src="exit1.png" alt="exit1">
+<p class="title">Lets Get Organised</p>
+<p class="sub">How many projects do you want to focus on this week?</p>
+<button class="click1"type="button" name="button">1</button>
+<button class="click2"type="button" name="button">2</button>
+<button class="click3"type="button" name="button">3</button>
+<button class="click4"type="button" name="button">4</button>
+<button class="click5"type="button" name="button">5</button>
+
+<p class="time1">Select the time you want to start?</p>
+<input class="time-input-1"type="text" name="" value="08:00 am">
+<p class="time2">Select the time you want to start?</p>
+<input class="time-input-2"type="text" name="" value="07:00 pm">
+
+<p class="sub2">What would you like to get done?</p>
+<p class="sub3">(Rank in order of importance, and input the hours you want to spend on each item)</p>
+
+<label>
+  <p class="auto-text">Auto</p>
+  <input type="checkbox" checked="checked" name="auto" class="auto">
+</label>
+
+<input class="item1" type="text" name="" value="1.">
+<input class="hours1"type="text" name="" value="HOURS">
+<input class="item2" type="text" name="" value="2.">
+<input class="hours2"type="text" name="" value="HOURS">
+<input class="item3" type="text" name="" value="3.">
+<input class="hours3"type="text" name="" value="HOURS">
+<input class="item4" type="text" name="" value="4.">
+<input class="hours4"type="text" name="" value="HOURS">
+<input class="item5" type="text" name="" value="5.">
+<input class="hours5"type="text" name="" value="HOURS">
+<a href="../tool-page-dark/tool dark.html">
+<button class="done" type="button" name="button">Done</button>
+</a>
+
+</div>
+<script type="text/javascript">
+  const btn = document.querySelector("#btn-cta");
+  const container = document.querySelector("#container");
+
+  btn.addEventListener("click", function () {
+    if (container.style.display === "block") {
+      container.style.display = "none";
+    } else {
+      container.style.display = "block";
+    }
+  });
+</script>
+
+
+  </body>
+</html>

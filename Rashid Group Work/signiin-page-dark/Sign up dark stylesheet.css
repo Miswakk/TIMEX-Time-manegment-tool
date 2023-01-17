@@ -1,0 +1,160 @@
+body {
+  background-color: #091641;
+  background-image: url('signup-background-dark.png');
+  background-size:cover;
+}
+
+.sun{
+  position: absolute;
+width: 45px;
+height: 45px;
+left: 1669.33px;
+top: 44.67px;
+}
+
+.see-password{
+  position: absolute;
+width: 27px;
+height: 27px;
+left: 1175px;
+top: 556px;
+}
+.user-dark{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 1780px;
+  top: 35.33px;
+}
+
+.logo-dark{
+  position: absolute;
+  width: 272.67px;
+  height: 56.24px;
+  left: 56px;
+  top: 42px;
+}
+
+.container{
+  position: absolute;
+height: 677px;
+left: 31.56%;
+right: 31.56%;
+top: 201px;
+
+background: #FFFFFF;
+border-radius: 45px;
+}
+
+.logo{
+  position: absolute;
+  height: 28px;
+  left: 44.79%;
+  right: 44.74%;
+  top: 318px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 28px;
+  /* identical to box height, or 43% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.input1{
+  position: absolute;
+  width: 536px;
+  height: 75px;
+  left: 692px;
+  top: 437px;
+
+  background: #FAFAFA;
+border: 1px solid #B3B3B3;
+/* action/secondary/10 */
+
+box-shadow: 0px 2px 4px rgba(189, 196, 198, 0.24);
+border-radius: 8px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 32px;
+/* identical to box height, or 160% */
+
+
+color: #AAAAAA;
+}
+
+.input2{
+  position: absolute;
+  width: 536px;
+  height: 75px;
+  left: 692px;
+  top: 532px;
+
+  background: #FAFAFA;
+border: 1px solid #B3B3B3;
+/* action/secondary/10 */
+
+box-shadow: 0px 2px 4px rgba(189, 196, 198, 0.24);
+border-radius: 8px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 32px;
+/* identical to box height, or 160% */
+
+
+color: #AAAAAA;
+}
+
+.login{
+  position: absolute;
+  width: 261.6px;
+  height: 44.53px;
+  left: 691.72px;
+  top: 626.58px;
+
+background: #9B6EFB;
+border-radius: 16px;
+border-color: #9B6EFB;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+
+
+/* qrn/colors/neutral/light/100 */
+
+color: #FAF7FF;
+}
+
+.signup{
+  position: absolute;
+  width: 261.6px;
+  height: 44.53px;
+  left: 966.68px;
+  top: 626.58px;
+  background-color: #FA7676;
+  border-radius: 16px;
+  border-color: #FA7676;
+
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+
+
+/* qrn/colors/neutral/light/100 */
+
+color: #FAF7FF;
+}

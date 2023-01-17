@@ -1,0 +1,450 @@
+body{
+  position: absolute;
+background: #C4ABFA;
+}
+
+button:hover{
+  background-color: #825DCF;
+  cursor: pointer;
+}
+
+.download-b{
+  position: absolute;
+width: 230.67px;
+height: 64px;
+left: 1173.33px;
+top: 600px;
+
+border: 1px solid #FAF7FF;
+border-radius: 16px;
+background-color: transparent;
+
+color: #FAF7FF;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 16px;
+}
+
+.share-b{
+  position: absolute;
+width: 201.33px;
+height: 64px;
+left: 1422.67px;
+top: 600px;
+
+border: 1px solid #FAF7FF;
+border-radius: 16px;
+background-color: transparent;
+
+color: #FAF7FF;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 16px;
+}
+
+.edit-b{
+  position: absolute;
+width: 202.67px;
+height: 64px;
+left: 1642.67px;
+top: 600px;
+
+border: 1px solid #FAF7FF;
+border-radius: 16px;
+background-color: transparent;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 16px;
+
+color: #FAF7FF;
+}
+.profile-pic{
+  position: absolute;
+width: 40px;
+height: 40px;
+left: 1816px;
+top: 33.33px;
+}
+.moon{
+  position: absolute;
+width: 24px;
+height: 24px;
+left: 1779px;
+top: 41.33px;
+}
+
+.logo-light{
+  position: absolute;
+  width: 120.26px;
+  height: 35.5px;
+  left: 32px;
+  top: 35.58px;
+}
+
+.timetable{
+  position: absolute;
+  width: 1795.67px;
+  height: 1222.67px;
+  left: 49.33px;
+  top: 704px;
+}
+
+.timetable-keys{
+  position: absolute;
+  width: 1196px;
+  height: 204px;
+  left: 352px;
+  top: 1985px;
+}
+
+.quote-background{
+  position: absolute;
+  width: 1209.33px;
+  height: 405.33px;
+  left: 668px;
+  top: 168px;
+
+}
+
+.date{
+  position: absolute;
+  width: 222px;
+  height: 28px;
+  left: 90.33px;
+  top: 618px;
+}
+
+.todo{
+  position: absolute;
+  width: 853.33px;
+  height: 862.67px;
+  left: 78.67px;
+  top: 2246.67px;
+
+  background: #FFC39C;
+border-radius: 20px;
+}
+
+.done{
+  position: absolute;
+  width: 853.33px;
+  height: 862.67px;
+  left: 988px;
+  top: 2246.67px;
+
+  background: #60DEB8;
+border-radius: 20px;
+}
+
+.quotes{
+  position: absolute;
+  height: 72px;
+  left: 25.1%;
+  right: 18.47%;
+  top: 108px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 150%;
+  /* identical to box height, or 72px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.011em;
+
+  color: #FFFFFF;
+
+
+}
+
+.add-task{
+  position: absolute;
+  width: 572px;
+  height: 413.33px;
+  left: 53.33px;
+  top: 168px;
+
+background-color: #E1F5E3;
+  background: #E1F5E3;
+border-radius: 16px;
+border-color: #E1F5E3;
+}
+
+.add-time{
+  position: absolute;
+width: 481px;
+height: 30px;
+left: 81.33px;
+top: 401.67px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+/* identical to box height, or 30px */
+
+letter-spacing: -0.011em;
+
+color: #737473;
+}
+
+.add-input{
+  position: absolute;
+width: 481px;
+height: 72px;
+left: 81.33px;
+top: 317.67px;
+
+background-color: #E1F5E3;
+  background: #E1F5E3;
+
+  border-color: #E1F5E3;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 150%;
+/* identical to box height, or 72px */
+
+letter-spacing: -0.011em;
+
+color: #737473;
+}
+
+.add-task-title{
+  position: absolute;
+width: 122px;
+height: 32px;
+left: 67.33px;
+top: 192px;
+
+
+}
+
+
+
+
+
+
+
+
+.mySlides {display: none;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: absolute;
+  width: 1209.33px;
+  height: 405.33px;
+  left: 668px;
+  top: 168px;
+}
+
+
+.
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 0px;
+  width: 0px;
+  margin: 0 0px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  display: none;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+#myUL{
+  border-radius: 0px 0px 20px 20px;
+}
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #FFC39C;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background: #FFC39C;border-radius: 20px 20px 0px 0px;
+  padding: 30px 25px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #C4ABFA;
+  color: white;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.text-dec{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 28px;
+/* or 92% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+color: #000000;
+}
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+.absolute{
+  position: absolute;
+width: 853.33px;
+height: 862.67px;
+left: 78.67px;
+top: 2246.67px;
+}
+
+.todo-cover{
+  position: absolute;
+height: 896px;
+left: 1.77%;
+right: 52.08%;
+top: 2230px;
+
+background: #FFC39C;
+border-radius: 20px;
+}
+
+
+.footer-dec{position: absolute;
+height: 76px;
+left: 0.05%;
+right: 0.05%;
+top: 3119px;
+
+background: linear-gradient(98.61deg, #4545AE 3.5%, #AAD9D9 108.98%);}

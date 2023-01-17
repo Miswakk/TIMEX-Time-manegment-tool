@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="tool dark stylesheet.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+  </head>
+  <body>
+    <a href="../tool-page-light/tool light.html">
+    <img class="sun"src="sun.png" alt="sun">
+    </a>
+    <img class="profile-pic"src="profile-pic.png" alt="profile pic">
+    <img class="logo"src="logo.png" alt="logo">
+    <img class="date"src="date.png" alt="date">
+<img class="timetable"src="timetable.png" alt="">
+<img class="timetable-keys" src="timetable-keys.png" alt="">
+<img class="quote-background"src="quote-background.png" alt="">
+<div class="add-task"></div>
+<input class="add-input"type="text" name="" value="Add Task">
+<p class="add-time">4 hours</p>
+<img class="add-task-title"src="add-task-title.png" alt="">
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+
+  <p class="quotes">Opportunities dont happen, You create them.</p>
+
+</div>
+
+<div class="mySlides fade">
+
+  <p class="quotes">It is never too late to be what you might have been</p>
+
+</div>
+
+<div class="mySlides fade">
+
+  <p class="quotes">“Either you run the day or the day runs you.” — Jim Rohn</p>
+
+</div>
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+</div>
+<br>
+
+
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 15000); // Change image every 2 seconds
+}
+</script>
+
+
+<button class="download-b" type="button" name="button">Download</button>
+<button class="share-b"type="button" name="button">Share</button>
+<button class="edit-b"type="button" name="button">Edit</button>
+
+
+
+
+<div class="todo-cover"></div>
+
+<div class="absolute">
+<div id="myDIV" class="header">
+  <h2 class="text-dec">My To Do List</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<ul id="myUL">
+  <li>Workout</li>
+  <li class="checked">Pay bills</li>
+  <li>Give Abdur rahman 98%</li>
+  <li>Go shopping</li>
+  <li>Read a book</li>
+  <li>Join charity shop</li>
+</ul>
+</div>
+<script>
+// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>
+
+<div class="footer-dec">
+
+</div>
+
+
+
+
+  </body>
+</html>
